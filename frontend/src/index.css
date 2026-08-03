@@ -1,0 +1,373 @@
+/* frontend/src/index.jsx */
+
+/* ----- GLOBAL LAYOUT ----- */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  --fade-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+html {
+  touch-action: manipulation;
+}
+
+/* Prevent layout shrinking and horizontal overflow */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Modern mobile height support */
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: inherit;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  display: flex;          
+  flex-direction: column; 
+}
+
+/* ----- APP CONTAINER SYSTEM ----- */
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  overflow-x: visible;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .app-container {
+    padding: 30px 40px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .app-container {
+    padding: 20px 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 639px) {
+  .app-container {
+    padding: 10px 20px 10px;
+  }
+}
+
+/* Improve element sizing stability */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ----- SCROLL SYSTEM ----- */
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Remove horizontal scroll */
+/* @media (min-width: 1200px) {
+  .scroll-hide {
+    overflow-x: hidden !important;
+  }
+}
+
+/* ----- APPROVAL TABLE ----- */
+
+/* Base row */
+.approval-row {
+  transition: background 0.15s ease;
+  cursor: default;
+}
+
+/* Light mode hover */
+.approval-row:hover {
+  background: #f9fafb;
+}
+
+/* Dark mode hover */
+.dark .approval-row:hover {
+  background: #0f172a;
+}
+
+/* Optional subtle polish */
+.approval-row:active {
+  transform: scale(0.998);
+}
+
+/* ----- LIGHT MODE ----- */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+    --fade-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* ----- GLOBAL ANIMATION ----- */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0px rgba(255,76,76,0.0); }
+  50% { box-shadow: 0 0 12px rgba(255,76,76,0.45); }
+  100% { box-shadow: 0 0 0px rgba(255,76,76,0.0); }
+}
+
+/* Shimmer Skeleton */
+@keyframes shimmerSlide {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+@keyframes shimmerPulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.72;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -10px);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes successPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Approval Cards */
+.approval-card {
+  animation: fadeInUp 0.35s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Wallet Secure Shield */
+.secure-shield {
+  animation: shieldPulse 2s ease-in-out infinite;
+}
+
+@keyframes shieldPulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 4px rgba(34,197,94,0.35));
+  }
+
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px rgba(34,197,94,0.55));
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 4px rgba(34,197,94,0.35));
+  }
+}
+
+/* Search Floating */
+.search-animation {
+  animation: floatSearch 2.5s ease-in-out infinite;
+}
+
+@keyframes floatSearch {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Type Sorting/Filtering */
+.filter-animation {
+  animation: filterFloat 3s ease-in-out infinite;
+}
+
+.filter-dot {
+  animation: dotFloat 2s ease-in-out infinite;
+}
+
+.filter-dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.filter-dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes filterFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes dotFloat {
+  0% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-6px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.6; }
+}
+
+/* Repair SVG */
+.spanner-arm {
+  transform-origin: 120px 90px;
+  animation: wrenchFix 1.8s ease-in-out infinite;
+}
+
+@keyframes wrenchFix {
+  0% { transform: rotate(0deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(-12deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ----- LIGHT/DARK MODE ----- */
+
+.theme-icon {
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  transition: transform 0.35s ease, opacity 0.4s ease;
+}
+
+.theme-icon.moon {
+  transform: rotate(-120deg);
+  margin-right: -3px;
+  vertical-align: -2px;
+}
+
+.theme-icon.sun {
+  transform: rotate(0deg);
+}
+
+/* Sun */
+.sun .sun-rays {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.sun .moon-shape {
+  opacity: 0;
+}
+
+/* Moon */
+.moon .sun-rays {
+  opacity: 0;
+}
+
+.moon .sun-core {
+  opacity: 0;
+}
+
+.moon .moon-shape {
+  opacity: 1;
+  fill: currentColor;
+  stroke: none;
+}

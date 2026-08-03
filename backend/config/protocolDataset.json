@@ -1,0 +1,109 @@
+[
+
+{"name":"Uniswap V2","address":"0x7a250d5630b4cf539739df2c5dacb4c659f2488d"},
+
+{"name":"Uniswap V3","address":"0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45"},
+
+{"name":"Uniswap V3","address":"0xe592427a0aece92de3edee1f18e0157c05861564"},
+
+{"name":"Uniswap V2","address":"0xef1c6e67703c7bd7107eed8303fbe6ec2554bf6b"},
+
+{"name":"Uniswap Permit2","address":"0x000000000022d473030f116ddee9f6b43ac78ba3"},
+
+{"name":"PancakeSwap V3","address":"0x13f4ea83d0bd40e75c8222255bc855a974568dd4"},
+
+{"name":"SushiSwap","address":"0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f"},
+
+{"name":"Balancer Vault","address":"0xba12222222228d8ba445958a75a0704d566bf2c8"},
+
+{"name":"Curve Swap","address":"0x16c6521dff6bab339122a0fe25a9116693265353"},
+
+{"name":"Curve Swap","address":"0x99a58482bd75cbab83b27ec03ca68ff489b5788f"},
+
+{"name":"1inch V2","address":"0x111111125434b319222CdBf8C261674aDB56F3ae"},
+
+{"name":"1inch V4","address":"0x1111111254fb6c44bac0bed2854e76f90643097d"},
+
+{"name":"1inch V5","address":"0x1111111254eeb25477b68fb85ed929f73a960582"},
+
+{"name":"0x Exchange","address":"0xdef1c0ded9bec7f1a1670819833240f027b25eff"},
+
+{"name":"0x Protocol","address":"0x0000000000001fF3684f28c67538d4D072C22734"},
+
+{"name":"Paraswap V5","address":"0xdef171fe48cf0115b1d80b88dc8eab59176fee57"},
+
+{"name":"KyberSwap","address":"0x9aab3f75489902f3a48495025729a0af77d4b11e"},
+
+{"name":"DODO V2","address":"0xa356867fdcea8e71aeaf87805808803806231fdc"},
+
+{"name":"CoW Swap","address":"0x9008d19f58aabd9ed0d60971565aa8510560ab41"},
+
+{"name":"OpenOcean V2","address":"0x6352a56caadc4f1e25cd6c75970fa768a3304e64"},
+
+{"name":"AirSwap","address":"0x8fd3121013a07c57f0d69646e86e7a4880b467b7"},
+
+{"name":"Relay Protocol","address":"0xBBbfD134E9b44BfB5123898BA36b01dE7ab93d98"},
+
+{"name":"Relay Depository","address":"0x4cD00E387622C35bDDB9b4c962C136462338BC31"},
+
+{"name":"LI.FI Permit2","address":"0x89c6340B1a1f4b25D36cd8B063D49045caF3f818"},
+
+{"name":"LI.FI Diamond","address":"0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae"},
+
+{"name":"Socket Bridge","address":"0x3a23f943181408eac424116af7b7790c94cb97a5"},
+
+{"name":"Stargate Finance","address":"0x8731d54e9d02c286767d56ac03e8037c07e01e98"},
+
+{"name":"Synapse Bridge","address":"0x2796317b0ff8538f253012862c06787adfb8ceb6"},
+
+{"name":"Wormhole Bridge","address":"0x3ee18b2214aff97000d974cf647e7c347e8fa585"},
+
+{"name":"cBridge V2","address":"0x5427fefa711eff984124bfbb1ab6fbf5e3da1820"},
+
+{"name":"Allbridge Core","address":"0x609c690e8f7d68a59885c9132e812eebdaaf0c9e"},
+
+{"name":"Polygon Bridge","address":"0xa0c68c638235ee32657e8f720a23cec1bfc77c77"},
+
+{"name":"Optimism Bridge","address":"0x99c9fc46f92e8a1c0dec1b1747d010903e884be1"},
+
+{"name":"Base Bridge","address":"0x3154cf16ccdb4c6d922629664174b904d80f2c35"},
+
+{"name":"Scroll Bridge","address":"0x6774bcbd5cecef1336b5300fb5186a12ddd8b367"},
+
+{"name":"zkSync Bridge","address":"0x32400084c286cf3e17e7b677ea9583e60a000324"},
+
+{"name":"Aave V2","address":"0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9"},
+
+{"name":"Aave V3","address":"0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2"},
+
+{"name":"Compound Comptroller","address":"0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b"},
+
+{"name":"MakerDAO DSR","address":"0x373238337bfe1146fb49989fc222523f83081ddb"},
+
+{"name":"SparkLend","address":"0xc13e21b648a5ee794902342038ff3adab66be987"},
+
+{"name":"Morpho","address":"0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb"},
+
+{"name":"OpenSea 1.1","address":"0x00000000006c3852cbef3e08e8df289169ede581"},
+
+{"name":"OpenSea 1.2","address":"0x00000000000006c7676171937c444f6bde3d6282"},
+
+{"name":"Blur","address":"0x000000000000ad05ccc4f10045630fb830b95127"},
+
+{"name":"LooksRare","address":"0x59728544b08ab483533076417fbbb2fd0b17ce3a"},
+
+{"name":"X2Y2","address":"0x74312363e45dcaba76c59ec49a7aa8a65a67eed3"},
+
+{"name":"Foundation","address":"0xcda72070e455bb31c7690a170224ce43623d0b6f"},
+
+{"name":"Zora","address":"0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7"},
+
+{"name":"Rarible V2","address":"0x9757f2d2b135150bbeb65308d4a91804107cd8d6"},
+
+{"name":"Pendle V4","address":"0x888888888889758f76e7103c6cbf23abbf58f946"},
+
+{"name":"EigenLayer SM","address":"0x858646372cc42e1a627fce94aa7a7033e7cf075a"},
+
+{"name":"EigenLayer DM","address":"0x39053d51b77dc0d36036fc1fcc8cb819df8ef37a"}
+
+]

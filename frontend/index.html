@@ -1,0 +1,60 @@
+<!-- index.html -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Prevent dark mode flash before React loads -->
+    <script>
+      const saved = sessionStorage.getItem("theme-mode");
+      if (
+        saved === "dark" ||
+        (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+
+    <style>
+      html.dark {
+        background: #0f172a;
+      }
+
+      html, body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+      }
+
+      #root {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Revoky | Scan & Revoke Token/NFT Approvals</title>
+
+    <meta
+      name="description"
+      content="Protect your wallet by reviewing and revoking risky token and nft permissions across multiple chains"
+    />
+
+    <meta name="theme-color" content="#0f172a" />
+    </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

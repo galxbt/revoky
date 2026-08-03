@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <defs>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="100%" stop-color="#ff1a1a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagon -->
+  <polygon
+    points="32,2 60,18 60,46 32,62 4,46 4,18"
+    fill="url(#hexGrad)"
+  />
+
+  <!-- Bold Custom R -->
+  <path
+    d="M24 20 H36
+       Q42 20 42 26
+       Q42 31 36 31
+       H30
+       L42 44
+       H35
+       L26 34
+       H24 Z"
+    fill="white"
+  />
+
+</svg>
