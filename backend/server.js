@@ -31,6 +31,19 @@ app.use(
 );
 
 // -------------------------------------
+// HEALTH CHECK
+// -------------------------------------
+
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    service: "Revoky Backend",
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString(),
+  });
+});
+
+// -------------------------------------
 // ROUTES
 // -------------------------------------
 
