@@ -5,9 +5,6 @@ node_modules/
 dist/
 .vite/
 
-# Vercel
-.vercel/
-
 # Environment files (keep .env.example tracked)
 .env*
 !.env.example
