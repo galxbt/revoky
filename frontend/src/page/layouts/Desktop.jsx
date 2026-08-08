@@ -255,7 +255,7 @@ export default function Desktop() {
           config={DESKTOP_CONFIG.inLineWarning}
         >
           Unable to refresh.
-          Showing cached results.
+          Showing last scanned results.
         </InlineWarning>
       )}
 

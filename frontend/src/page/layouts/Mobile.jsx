@@ -259,7 +259,7 @@ export default function Mobile() {
           config={MOBILE_CONFIG.inLineWarning}
         >
           Unable to refresh.
-          Showing cached results.
+          Showing last scanned results.
         </InlineWarning>
       )}
 
