@@ -4,8 +4,7 @@ export default function DisconnectModal({
   isDark,
   isOpen,
   setShowDisconnectModal,
-  setConnectedAddress,
-  setWalletActive,
+  disconnectWallet,
   config,
 }) {
   const {
@@ -18,16 +17,10 @@ export default function DisconnectModal({
     return null;
   }
 
-  function handleDisconnect() {
+  async function handleDisconnect() {
+    await disconnectWallet();
+  
     setShowDisconnectModal(false);
-
-    sessionStorage.setItem(
-      "revoky-wallet-disconnected",
-      "true",
-    );
-
-    setConnectedAddress(null);
-    setWalletActive(false);
   }
 
   return (

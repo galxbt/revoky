@@ -64,10 +64,9 @@ export default function Desktop() {
   } = ui;
   
   const {
-    setConnectedAddress,
     connectWallet,
+    disconnectWallet,
     connectSwitching,
-    setWalletActive,
     activeAddress,
     statusLabel,
     addressLabel,
@@ -318,10 +317,8 @@ export default function Desktop() {
               isDark={isDark}
               isOpen={isConnectedView && showDisconnectModal}
               setShowDisconnectModal={setShowDisconnectModal}
-              setConnectedAddress={setConnectedAddress}
-              setWalletActive={setWalletActive}
-              config={DESKTOP_CONFIG.disconnectModal
-              }
+              disconnectWallet={disconnectWallet}
+              config={DESKTOP_CONFIG.disconnectModal}
             />
           </WalletOverview>
         )}

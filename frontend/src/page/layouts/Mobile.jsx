@@ -67,10 +67,9 @@ export default function Mobile() {
   } = ui;
   
   const {
-    setConnectedAddress,
     connectWallet,
+    disconnectWallet,
     connectSwitching,
-    setWalletActive,
     activeAddress,
     statusLabel,
     addressLabel,
@@ -316,10 +315,8 @@ export default function Mobile() {
             isDark={isDark}
             isOpen={isConnectedView && showDisconnectModal}
             setShowDisconnectModal={setShowDisconnectModal}
-            setConnectedAddress={setConnectedAddress}
-            setWalletActive={setWalletActive}
-            config={MOBILE_CONFIG.disconnectModal
-            }
+            disconnectWallet={disconnectWallet}
+            config={MOBILE_CONFIG.disconnectModal}
           />
         </WalletOverview>
       )}

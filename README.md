@@ -12,12 +12,15 @@ It scans wallets across multiple chains, detects risky token & NFT approvals, ex
 - Risk scoring + human-readable insights
 - Wallet exposure breakdown
 - Batch revoke engine
+- Multi-wallet connection through Reown AppKit
+- Browser wallet discovery and connection
+- Multi-chain wallet network switching
 
 ---
 
 ## 🛠 Tech
 
-React (Vite) • Ethers.js • Viem • Multicall • Express.js • Blockscout • Injected Wallets
+React (Vite) • Ethers.js • Viem • Reown AppKit • Multicall • Express.js • Blockscout
 
 ---
 

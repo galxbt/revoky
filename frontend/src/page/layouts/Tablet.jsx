@@ -64,10 +64,9 @@ export default function Tablet() {
   } = ui;
   
   const {
-    setConnectedAddress,
     connectWallet,
+    disconnectWallet,
     connectSwitching,
-    setWalletActive,
     activeAddress,
     statusLabel,
     addressLabel,
@@ -318,10 +317,8 @@ export default function Tablet() {
               isDark={isDark}
               isOpen={isConnectedView && showDisconnectModal}
               setShowDisconnectModal={setShowDisconnectModal}
-              setConnectedAddress={setConnectedAddress}
-              setWalletActive={setWalletActive}
-              config={TABLET_CONFIG.disconnectModal
-              }
+              disconnectWallet={disconnectWallet}
+              config={TABLET_CONFIG.disconnectModal}
             />
           </WalletOverview>
         )}
