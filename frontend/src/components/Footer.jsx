@@ -103,7 +103,7 @@ export default function Footer({
           </div>
 
           <a
-            href="https://github.com/TheBoredDev01"
+            href="https://github.com/galx4f7"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -137,7 +137,7 @@ export default function Footer({
                 justifyContent: "center",
               }}
             >
-              TheBoredDev
+              Galx
             </div>
           </a>
         </div>
