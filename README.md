@@ -27,7 +27,7 @@ React (Vite) • Ethers.js • Viem • Reown AppKit • Multicall • Express.j
 ## 🚀 Run
 
 ```bash
-git clone https://github.com/TheBoredDev01/revoky.git
+git clone https://github.com/galx4f7/revoky.git
 cd revoky
 npm install
 npm run dev
